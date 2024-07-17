@@ -1,29 +1,64 @@
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
 /* Estilos para la lista de películas */
 ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-   li {
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilos para el título de la película */
-  li h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #333;
-  }
-  
-  /* Estilos para la puntuación de la película */
-  li p {
-    margin: 0;
-    font-size: 16px;
-    color: #666;
-  }
-  
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilos para cada tarjeta de película */
+li {
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 200px; /* Ajusta el ancho de las tarjetas según tus necesidades */
+}
+
+li:hover {
+  transform: translateY(-10px);
+}
+
+/* Estilos para la imagen de la película */
+li img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+/* Estilos para el título de la película */
+li h2 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilos para la puntuación de la película */
+li p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
